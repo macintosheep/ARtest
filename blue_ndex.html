@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Webseite</title>
+    <style>
+        body {
+            background-color: lightblue; /* Initial background color set to light blue */
+            color: black; /* Text color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Vertikal in der oberen Mitte ausrichten */
+            align-items: center; /* Horizontal in der Mitte ausrichten */
+            min-height: 100vh; /* Mindesthöhe des Bildschirms verwenden */
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .color-option {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%; /* Rundes Element */
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Willkommen auf meiner Webseite</h1>
+    <p>Dies ist ein Absatz.</p>
+    <div class="color-options">
+        <div class="color-option" style="background-color: blue" onclick="changeBackgroundColor('blue')"></div>
+        <div class="color-option" style="background-color: green" onclick="changeBackgroundColor('green')"></div>
+        <div class="color-option" style="background-color: red" onclick="changeBackgroundColor('red')"></div>
+        <div class="color-option" style="background-color: purple" onclick="changeBackgroundColor('purple')"></div>
+        <div class="color-option" style="background-color: orange" onclick="changeBackgroundColor('orange')"></div>
+        <div class="color-option" style="background-color: pink" onclick="changeBackgroundColor('pink')"></div>
+        <div class="color-option" style="background-color: yellow" onclick="changeBackgroundColor('yellow')"></div>
+    </div>
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
